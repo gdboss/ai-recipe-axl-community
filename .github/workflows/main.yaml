@@ -11,4 +11,4 @@ jobs:
       with:
         node-version: 24
     - run: npm ci
-    - run: npm run lint
+    - run: npm run verify # lint + design token gates + tests
