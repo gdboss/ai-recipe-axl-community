@@ -35,3 +35,100 @@
     padding: 40px 32px;
   }
 }
+
+/* ------------------------------------------------------------------ */
+
+/* hero-terminal variant                                              */
+
+/* Dark neon "terminal" hero. Scoped to .hero.terminal so the    */
+
+/* default hero above is unaffected.                                  */
+
+/* ------------------------------------------------------------------ */
+
+.hero.terminal {
+  /* variant design tokens */
+  --hero-terminal-bg: #0a0a0f;
+  --hero-terminal-cyan: #00e5ff;
+  --hero-terminal-magenta: #ff1f8e;
+  --hero-terminal-text: #fff;
+  --hero-terminal-muted: #9aa0b0;
+  --hero-terminal-mono: ui-monospace, "SF Mono", "Roboto Mono", menlo, consolas, monospace;
+  --hero-terminal-max-width: 1000px;
+
+  background-color: var(--hero-terminal-bg);
+  color: var(--hero-terminal-text);
+  min-height: 640px;
+  padding: 96px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* constrain inner content and left-align */
+.hero.terminal > div {
+  width: 100%;
+  max-width: var(--hero-terminal-max-width);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* body copy paragraphs (monospace, muted) */
+.hero.terminal p {
+  color: var(--hero-terminal-muted);
+  font-family: var(--hero-terminal-mono);
+  font-size: var(--body-font-size-xs);
+  line-height: 1.6;
+}
+
+/* eyebrow pill: first paragraph, e.g. "SYSTEM // INTRO_01" */
+.hero.terminal p:first-of-type {
+  display: inline-block;
+  margin: 0 0 32px;
+  padding: 6px 12px;
+  border: 1px solid var(--hero-terminal-cyan);
+  border-radius: 4px;
+  color: var(--hero-terminal-cyan);
+  font-family: var(--hero-terminal-mono);
+  font-size: var(--body-font-size-xs);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.hero.terminal h1 {
+  max-width: none;
+  margin: 0 0 24px;
+  color: var(--hero-terminal-text);
+  font-family: var(--heading-font-family);
+  font-size: var(--heading-font-size-xxl);
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+}
+
+/* terminal callout: a paragraph wrapped in <code> */
+.hero.terminal p code {
+  display: block;
+  margin-top: 32px;
+  padding: 18px 20px;
+  border: 1px solid var(--hero-terminal-magenta);
+  border-radius: 6px;
+  background: rgb(255 31 142 / 6%);
+  color: var(--hero-terminal-muted);
+  font-family: var(--hero-terminal-mono);
+  font-size: var(--body-font-size-xs);
+}
+
+.hero.terminal p code strong {
+  color: var(--hero-terminal-text);
+}
+
+.hero.terminal a {
+  color: var(--hero-terminal-cyan);
+}
+
+@media (width >= 900px) {
+  .hero.terminal {
+    padding: 120px 32px;
+  }
+}

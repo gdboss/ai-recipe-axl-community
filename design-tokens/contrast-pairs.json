@@ -1,0 +1,83 @@
+{
+  "description": "Text/background pairs that must meet WCAG 2.2 contrast. min 4.5 = normal text (AA), 3 = large text or UI parts. Owned by design: change only with design sign-off.",
+  "pairs": [
+    {
+      "text": "color.text.default",
+      "background": "color.surface.default",
+      "min": 4.5,
+      "usedBy": "body text"
+    },
+    {
+      "text": "color.text.default",
+      "background": "color.surface.subtle",
+      "min": 4.5,
+      "usedBy": "light sections, footer"
+    },
+    {
+      "text": "color.text.muted",
+      "background": "color.surface.default",
+      "min": 4.5,
+      "usedBy": "secondary text"
+    },
+    {
+      "text": "color.text.muted",
+      "background": "color.surface.subtle",
+      "min": 4.5,
+      "usedBy": "disabled buttons"
+    },
+    {
+      "text": "color.text.link",
+      "background": "color.surface.default",
+      "min": 4.5,
+      "usedBy": "links"
+    },
+    {
+      "text": "color.text.link-hover",
+      "background": "color.surface.default",
+      "min": 4.5,
+      "usedBy": "links on hover"
+    },
+    {
+      "text": "color.text.inverse",
+      "background": "color.text.link",
+      "min": 4.5,
+      "usedBy": "primary button"
+    },
+    {
+      "text": "color.text.inverse",
+      "background": "color.text.link-hover",
+      "min": 4.5,
+      "usedBy": "primary button on hover"
+    },
+    {
+      "text": "color.text.inverse",
+      "background": "color.text.default",
+      "min": 4.5,
+      "usedBy": "dark buttons, hero text on dark image"
+    },
+    {
+      "text": "color.surface.subtle",
+      "background": "color.text.muted",
+      "min": 4.5,
+      "usedBy": "secondary button"
+    },
+    {
+      "text": "color.terminal.text",
+      "background": "color.terminal.surface",
+      "min": 4.5,
+      "usedBy": "terminal hero heading"
+    },
+    {
+      "text": "color.terminal.text-muted",
+      "background": "color.terminal.surface",
+      "min": 4.5,
+      "usedBy": "terminal hero body copy"
+    },
+    {
+      "text": "color.terminal.accent",
+      "background": "color.terminal.surface",
+      "min": 4.5,
+      "usedBy": "terminal hero eyebrow and links"
+    }
+  ]
+}
