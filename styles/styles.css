@@ -49,13 +49,13 @@
 
   /* design-tokens:end */
 
-  /* colors */
-  --background-color: white;
-  --light-color: #f8f8f8;
-  --dark-color: #505050;
-  --text-color: #131313;
-  --link-color: #3b63fb;
-  --link-hover-color: #1d3ecf;
+  /* colors (legacy names kept for existing blocks, now backed by design tokens) */
+  --background-color: var(--color-surface-default);
+  --light-color: var(--color-surface-subtle);
+  --dark-color: var(--color-text-muted);
+  --text-color: var(--color-text-default);
+  --link-color: var(--color-text-link);
+  --link-hover-color: var(--color-text-link-hover);
 
   /* fonts */
   --body-font-family: roboto, roboto-fallback, sans-serif;

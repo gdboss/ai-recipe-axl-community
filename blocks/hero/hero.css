@@ -47,12 +47,12 @@
 /* ------------------------------------------------------------------ */
 
 .hero.terminal {
-  /* variant design tokens */
-  --hero-terminal-bg: #0a0a0f;
-  --hero-terminal-cyan: #00e5ff;
-  --hero-terminal-magenta: #ff1f8e;
-  --hero-terminal-text: #fff;
-  --hero-terminal-muted: #9aa0b0;
+  /* variant colours, backed by the global terminal tokens */
+  --hero-terminal-bg: var(--color-terminal-surface);
+  --hero-terminal-cyan: var(--color-terminal-accent);
+  --hero-terminal-magenta: var(--color-terminal-highlight);
+  --hero-terminal-text: var(--color-terminal-text);
+  --hero-terminal-muted: var(--color-terminal-text-muted);
   --hero-terminal-mono: ui-monospace, "SF Mono", "Roboto Mono", menlo, consolas, monospace;
   --hero-terminal-max-width: 1000px;
 
@@ -113,7 +113,7 @@
   padding: 18px 20px;
   border: 1px solid var(--hero-terminal-magenta);
   border-radius: 6px;
-  background: rgb(255 31 142 / 6%);
+  background: color-mix(in srgb, var(--hero-terminal-magenta) 6%, transparent);
   color: var(--hero-terminal-muted);
   font-family: var(--hero-terminal-mono);
   font-size: var(--body-font-size-xs);
