@@ -33,7 +33,7 @@ flowchart TD
 
 This repo contains a real sample run on the boilerplate, plus a custom dark neon "terminal" hero variant (`blocks/hero/hero.css`):
 
-- **Before:** tag [`sample-run-before`](https://github.com/gdboss/ai-recipe-axl-community/tree/sample-run-before). `npm run verify` fails with 13 hard-coded colors.
+- **Before:** branch [`sample-run-before`](https://github.com/gdboss/ai-recipe-axl-community/tree/sample-run-before). `npm run verify` fails with 13 hard-coded colors.
 - **What the skill changed:** [before → after diff](https://github.com/gdboss/ai-recipe-axl-community/compare/sample-run-before...sample-run-after) (3 CSS files, 15 lines).
 - **The report:** [design-tokens/SAMPLE-RUN.md](design-tokens/SAMPLE-RUN.md). It covers every mapping, the "needs a design decision" step for the neon colors, and the zero-visual-change check.
 
@@ -44,7 +44,7 @@ npm install
 npm run verify
 ```
 
-To try the skill yourself, check out the `sample-run-before` tag, open Claude Code in the repo, and run `/apply-design-tokens`.
+To try the skill yourself, check out the `sample-run-before` branch, open Claude Code in the repo, and run `/apply-design-tokens`.
 
 ## Commands
 

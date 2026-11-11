@@ -24,7 +24,7 @@ Workflow diagram: https://github.com/gdboss/ai-recipe-axl-community/blob/main/de
 ## Goals + Results
 Goal: let developers use Claude Code on EDS blocks without design-system drift reaching production.
 
-Results on my own EDS site (boilerplate-based, with a custom dark neon hero variant). The sample repo reproduces the same run, with before and after tags:
+Results on my own EDS site (boilerplate-based, with a custom dark neon hero variant). The sample repo reproduces the same run, with before and after branches:
 - 13 hard-coded colors (global styles, cards block, hero variant) moved onto 32 design tokens. The gates went from failing to passing.
 - Zero visual change, proven in a browser: every computed color on 32 test elements (hover states included) was identical, and the before/after full-page screenshots were byte-for-byte the same.
 - Lighthouse performance stayed at 100 on mobile and desktop on my site's preview.

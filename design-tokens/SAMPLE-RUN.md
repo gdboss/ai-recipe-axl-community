@@ -2,8 +2,8 @@
 
 Site: the `aem-boilerplate` with a custom dark neon "terminal" hero variant. This run was first done on my own EDS site and reproduced in this repo.
 
-- Before: tag [`sample-run-before`](https://github.com/gdboss/ai-recipe-axl-community/tree/sample-run-before)
-- After: tag [`sample-run-after`](https://github.com/gdboss/ai-recipe-axl-community/tree/sample-run-after)
+- Before: branch [`sample-run-before`](https://github.com/gdboss/ai-recipe-axl-community/tree/sample-run-before)
+- After: branch [`sample-run-after`](https://github.com/gdboss/ai-recipe-axl-community/tree/sample-run-after)
 - Diff: [before → after](https://github.com/gdboss/ai-recipe-axl-community/compare/sample-run-before...sample-run-after)
 
 Goal: move every color onto design tokens **without changing how the site looks**, so token values were set to the site's existing colors.
